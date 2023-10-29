@@ -128,7 +128,7 @@ body {
 header {
     display: grid;
     grid-template-columns: 150px auto;
-    background-color: rgba(115,255,213,0.6) 
+    background-color: rgba(115,255,213,0.7);
 }
 
 nav {
