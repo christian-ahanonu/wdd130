@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Montserrat:wght@500&display=swap');
 
+/* CSS for Home Page */
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -238,6 +239,113 @@ footer p a:hover {
 footer .social img {
     padding-top: 15px;
 }
+
+
+
+/* CSS for FAQ Page */
+
+.color-page {
+    height: 460px;
+    background-color:#232863;   
+}
+
+.holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.faq-hold {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.g1 {
+    grid-column: 1/2;
+    grid-row: 1/2; 
+    display: block;
+    margin: 0 auto;
+}
+
+.g1 img {
+    width: 350px;
+}
+
+.g2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 60px;
+    color: white;
+    font-family: kanit, arial, sans-serif;
+    font-weight: bold;
+}
+
+.me {
+    margin-top: -56px;
+}
+
+.g3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 176px;
+    font-family: montserrat, arial, sans-serif;
+    color: white;
+}
+
+
+/* styling for the button */
+.accordion {
+    background-color: #232863;;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    width: 1000px;
+    margin: 0 auto;
+    font-family: montserrat, arial, sans-serif;
+    font-size: 20px;
+    font-weight: 599;
+  }
+
+  /* background color when you click on the button  */
+  .active, .accordion:hover {
+    background-color: #498c8a;
+  }
+
+  /* styling for the panel */
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(251, 251, 251);
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-family: montserrat, arial, sans-serif;
+  }
+
+  /* styling for the + and - icons */
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+
+
+
 
 /* Media Query */
 @media screen and (max-width: 900px) {
