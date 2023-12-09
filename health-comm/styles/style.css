@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat:wght@500&display=swap');
 
 *,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
 }
 
 body {
@@ -350,14 +351,91 @@ body {
 
 
 
+/* CSS Contact Us  */
 
+.contact-cen {
+    max-width: 1000px;
+    /* text-align: center; */
+    margin: 0 auto;
+    padding: 60px 0 60px 0;
+}
 
+.contact-cen h1 {
+    padding-bottom: 20px;
+    font-family: cabin, lato, sans-serif;
+    color: #133B51;
+    font-size: 2.5rem;
+    
+}
 
+.contact-cen p {
+    font-family: montserrat, lato, sans-serif;
+    line-height: 1.45;
+}
 
+#form .form {
+    /* width: calc(100vw - 50px); */
+    max-width: 100%;
+    background: #133B51;
+    margin: 0 auto;
+  }
+  #form .form .form__body {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 24px 0 24px 0;
 
-
-
-
+  }
+  #form .form .form__body .form__title {
+    font-size: 0.9rem;
+    margin: 20px 0;
+    color: white;
+    font-family: cabin, lato, sans-serif;
+  }
+  #form .form .form__body .form__input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  
+  #form .form .form__body .form__input input {
+    /* border: 1px solid #9f9f9f; */
+    outline: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-family: montserrat, lato, sans-serif;
+  }
+  #form .form .form__body .form__num {
+    margin: 20px 0;
+  }
+  #form .form .form__body .form__num input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    /* border: 1px solid #9f9f9f; */
+    font-family: montserrat, lato, sans-serif;
+  }
+  
+  #form .form .form__body .form__textBox textarea {
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-family: montserrat, lato, sans-serif;
+  }
+  
+  #form .form .form__body .form__submit input{
+  border: none;
+  outline: none;
+  font-size: .9rem;
+  padding: 1rem 3rem;
+  background: #fff;
+  margin: 20px 0;
+  font-family: montserrat, lato, sans-serif;
+  }
 
 
 
